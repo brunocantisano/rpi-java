@@ -40,8 +40,9 @@ RUN rm -f jdk*.tar.gz /usr/lib/jvm/jdk-${JAVA_VERSION}-oracle-arm32-vfp-hflt/src
        $JAVA_HOME/jre/bin/tnameserv \
        $JAVA_HOME/jre/bin/unpack200
 
-# apk del wget ca-certificates && \
-# rm -rf /var/cache/apk/* 
+RUN apt-get remove -y wget ca-certificates && \
+    apt-get autoremove -y && \
+    rm -rf /var/cache/* 
 
 # Define default command.
 CMD ["bash"]
