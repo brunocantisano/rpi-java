@@ -1,5 +1,7 @@
 # JAVA Oracle no Raspberry Pi
 
+![rpi-java](https://img.shields.io/docker/pulls/paperinik/rpi-java)
+
 ![Raspberry Pi 4](assets/raspberry.jpg)
 
 
